@@ -1,0 +1,5 @@
+allowLocalFiles: true
+themeSet:
+  - ./theme
+options:
+  looseYAML: true
