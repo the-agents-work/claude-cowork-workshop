@@ -5,10 +5,10 @@
   "description": "Workshop slides: Claude Cowork & ung dung thuc te (event 22/5/2026, 163 attendees)",
   "scripts": {
     "build": "npm run build:pdf && npm run build:html",
-    "build:pdf": "marp slides.md --pdf --allow-local-files -o dist/claude-cowork-workshop.pdf",
-    "build:html": "marp slides.md --html --allow-local-files -o dist/index.html",
-    "build:pptx": "marp slides.md --pptx --allow-local-files -o dist/claude-cowork-workshop.pptx",
-    "watch": "marp slides.md --watch --html --allow-local-files -o dist/index.html",
+    "build:pdf": "marp slides.md --pdf --allow-local-files -o docs/claude-cowork-workshop.pdf",
+    "build:html": "marp slides.md --html --allow-local-files -o docs/index.html",
+    "build:pptx": "marp slides.md --pptx --allow-local-files -o docs/claude-cowork-workshop.pptx",
+    "watch": "marp slides.md --watch --html --allow-local-files -o docs/index.html",
     "serve": "marp slides.md --server"
   },
   "devDependencies": {

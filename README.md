@@ -6,8 +6,9 @@ Soạn cho live event **"Claude & Automation với Cowork"** — 22:00 EDT, 22/0
 
 ## Xem nhanh
 
-- **HTML deck:** `dist/index.html` (mở bằng browser)
-- **PDF deck:** `dist/claude-cowork-workshop.pdf`
+- **HTML deck (live):** https://the-agents-work.github.io/claude-cowork-workshop/
+- **HTML deck (local):** `docs/index.html` (mở bằng browser)
+- **PDF deck:** [`docs/claude-cowork-workshop.pdf`](./docs/claude-cowork-workshop.pdf)
 - **Source:** [`slides.md`](./slides.md)
 - **GitHub Pages:** sẽ enable sau khi push
 
