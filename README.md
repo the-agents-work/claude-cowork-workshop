@@ -11,7 +11,7 @@ Soạn cho live event **"Claude & Automation với Cowork"** — 22:00 EDT, 22/0
 - **PDF deck:** [`docs/claude-cowork-workshop.pdf`](./docs/claude-cowork-workshop.pdf)
 - **Source:** [`slides.md`](./slides.md) (Markdown Marp)
 
-## 7 phần · ~53 slide
+## 7 phần · 55 slide
 
 1. **Vì sao Cowork?** — vấn đề ngầm với Chat, timeline GA, 4 con số đáng nhớ
 2. **Kiến trúc** — Levels 1-3 theo Anthropic *(Context & Tools → Skills → Plugins)* + Advanced *(`/schedule`, Live Artifacts, Dispatch)*
@@ -44,7 +44,7 @@ Marp tự convert Markdown → HTML/PDF/PPTX. Sửa `slides.md` là xong, không
 
 ## Nguồn (đã verify)
 
-**Chính chủ Anthropic** *(8 tutorial)*:
+**Chính chủ Anthropic** *(8 tutorial chọn lọc cho workshop)*:
 - [Set up Cowork to work the way you do](https://claude.com/resources/tutorials/cowork-onboarding-guide)
 - [Delegating your first task](https://claude.com/resources/tutorials/delegating-your-first-task-in-claude-cowork)
 - [Customize Claude Cowork](https://claude.com/resources/tutorials/customize-claude-cowork)
@@ -59,7 +59,7 @@ Marp tự convert Markdown → HTML/PDF/PPTX. Sửa `slides.md` là xong, không
 
 **Community deep dives:**
 - [claudecowork.im](https://claudecowork.im) — unofficial complete guide, 30+ prompt mẫu
-- [techsy.io / Cowork Guide 2026](https://techsy.io/en/blog/claude-cowork-guide) — pricing & limitations
+- [techsy.io / Cowork Guide 2026](https://techsy.io/en/blog/claude-cowork-guide) — community view về pricing, limitations, marketplace maturity
 - [pasqualepillitteri.it / triple announcement](https://pasqualepillitteri.it/en/news/755/anthropic-managed-agents-cowork-ga-april-9-2026) — GA enterprise features
 - Jeff Su · DataCamp · YouTube AI Foundations *(33 phút)*
 

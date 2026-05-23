@@ -110,6 +110,15 @@ style: |
     text-transform: uppercase;
     font-weight: 700;
   }
+  section.compact {
+    font-size: 22px;
+    padding: 48px 64px;
+  }
+  section.compact h2 { font-size: 34px; }
+  section.compact h3 { font-size: 23px; }
+  section.compact table { font-size: 19px; }
+  section.compact pre { font-size: 17px; }
+  section.compact blockquote { font-size: 21px; }
 ---
 
 <!-- _class: lead cover -->
@@ -181,29 +190,9 @@ Bạn dùng Claude/ChatGPT mỗi ngày, nhưng:
 
 ## Cowork = bước nhảy khái niệm
 
-<div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;">
-
-<div>
-
-### Claude Chat
-- Bạn **dẫn** mọi bước
-- Output là **text trong chat**
-- "Smart conversation"
-- Phải copy-paste để dùng
-
-</div>
-
-<div>
-
-### Claude Cowork
-- Bạn **mô tả mục tiêu**
-- Output là **file hoàn chỉnh**
-- "Delegate, it delivers"
-- Save trực tiếp vào folder
-
-</div>
-
-</div>
+| Claude Chat | Claude Cowork |
+|---|---|
+| Bạn **dẫn** mọi bước<br>Output là **text trong chat**<br>"Smart conversation"<br>Phải copy-paste để dùng | Bạn **mô tả mục tiêu**<br>Output là **file hoàn chỉnh**<br>"Delegate, it delivers"<br>Save trực tiếp vào folder |
 
 <br>
 
@@ -217,42 +206,25 @@ Bạn dùng Claude/ChatGPT mỗi ngày, nhưng:
 
 | Mốc | Sự kiện | Ý nghĩa |
 |---|---|---|
-| **01/2026** | Research preview (invite-only, Max-only) | Beta hẹp |
-| **04/2026 (early)** | Mở cho Pro $20 | Đại trà cho cá nhân |
-| **09/04/2026** | **GA chính thức** + 6 enterprise feature | Enterprise-ready |
-| **05/2026** | Mobile-trigger beta — "Dispatch" | Ra lệnh từ điện thoại |
+| **12/01/2026** | Research preview cho Max (macOS) | Beta hẹp |
+| **16/01/2026** | Mở research preview cho Pro (macOS) | Cá nhân bắt đầu dùng được |
+| **17/03/2026** | Mobile control / Dispatch preview | Ra lệnh từ điện thoại |
+| **09/04/2026** | **GA chính thức** trên macOS + Windows | Desktop-ready + enterprise telemetry |
 
 <br>
 
-> Cowork **mới GA 6 tuần**. Đây là lý do anh em VN nên học sớm — còn ít competition.
+> Tại event 22/05/2026, Cowork **mới GA khoảng 6 tuần**. Đây là lúc học sớm còn lợi thế.
 
 ---
 
 ## 4 con số đáng nhớ
 
-<div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;font-size:22px;">
-
-<div>
-
-### <span style="color:#50fa7b">$20/tháng</span>
-Mức tối thiểu — Claude Pro. Cowork bật sẵn, không phí thêm.
-
-### <span style="color:#50fa7b">~200+ plugin</span>
-Marketplace MCP, tăng nhanh hằng tuần.
-
-</div>
-
-<div>
-
-### <span style="color:#50fa7b">8 official tutorial</span>
-Anthropic tự viết — Legal, Sales, Marketing, SMB...
-
-### <span style="color:#50fa7b">~1%</span>
-Tỉ lệ hallucinate còn lại → bắt buộc review tay output cao rủi ro.
-
-</div>
-
-</div>
+| Con số | Vì sao nhớ |
+|---|---|
+| <span style="color:#50fa7b">$20/tháng</span> | Claude Pro là mức tối thiểu; Cowork đi kèm paid plan, không tách SKU riêng. |
+| <span style="color:#50fa7b">Plugin marketplace</span> | Marketplace còn trẻ, số lượng đổi nhanh theo tuần. Check lại trong app trước khi demo. |
+| <span style="color:#50fa7b">8 tutorial chọn lọc</span> | Bộ link chính chủ dùng trong workshop: setup, first task, customize, Sales, Legal, Marketing Ops, SMB... |
+| <span style="color:#50fa7b">Vẫn có hallucinate</span> | Output legal/finance/high-stakes phải review tay, dù có cite nguồn. |
 
 ---
 
@@ -323,29 +295,12 @@ Sau đó Claude đặt tên, lưu file, gắn vào project. Lần sau gọi tên
 
 Anthropic ship sẵn 4 plugin chính:
 
-<div style="display:grid;grid-template-columns:1fr 1fr;gap:18px;font-size:23px;">
-
-<div>
-
-### 🧑‍💼 Sales
-`/account-research` · `/call-summary` · CRM connector
-
-### ⚖️ Legal
-`/brief` skill · document sources · citation auto
-
-</div>
-
-<div>
-
-### 📊 Product / Marketing Ops
-weekly review prep · metrics dashboard
-
-### 🏢 Operations / SMB
-QB + PayPal + HubSpot · monthly close
-
-</div>
-
-</div>
+| Plugin | Workflow tiêu biểu |
+|---|---|
+| **Sales** | `/account-research` · `/call-summary` · CRM connector |
+| **Legal** | `/brief` skill · document sources · citation auto |
+| **Product / Marketing Ops** | weekly review prep · metrics dashboard |
+| **Operations / SMB** | QB + PayPal + HubSpot · monthly close |
 
 ---
 
@@ -374,31 +329,9 @@ QB + PayPal + HubSpot · monthly close
 
 ## Quy trình 3 bước
 
-<div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:20px;text-align:center;">
-
-<div>
-
-### 1. Describe
-Mô tả output mong muốn + nguồn dữ liệu.
-Desktop **hoặc** điện thoại (Dispatch).
-
-</div>
-
-<div>
-
-### 2. Execute
-Claude lên plan → hỏi clarifying → **làm song song nhiều nguồn** → xin duyệt bước quan trọng.
-
-</div>
-
-<div>
-
-### 3. Review
-Approve, redirect, hoặc để **schedule** chạy định kỳ.
-
-</div>
-
-</div>
+| 1. Describe | 2. Execute | 3. Review |
+|---|---|---|
+| Mô tả output mong muốn + nguồn dữ liệu.<br>Desktop **hoặc** điện thoại (Dispatch). | Claude lên plan → hỏi clarifying → **làm song song nhiều nguồn** → xin duyệt bước quan trọng. | Approve, redirect, hoặc để **schedule** chạy định kỳ. |
 
 <br>
 
@@ -498,44 +431,15 @@ Claude có quyền: đọc, ghi, tạo file trong folder này
 
 ---
 
+<!-- _class: compact -->
+
 ## Bước 2: Connect tools
 
 Sidebar phải → **Customize** → **Connectors** → bấm Authorize:
 
-<div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px;font-size:21px;">
-
-<div>
-
-**Communication**
-- Gmail
-- Slack
-- Outlook
-- Zoom *(GA 4/2026)*
-
-</div>
-
-<div>
-
-**Files & Notes**
-- Google Drive
-- Notion
-- OneDrive
-- Dropbox
-
-</div>
-
-<div>
-
-**Work**
-- Salesforce
-- HubSpot
-- Jira / Linear
-- QuickBooks
-- Stripe / PayPal
-
-</div>
-
-</div>
+| Communication | Files & Notes | Work |
+|---|---|---|
+| Gmail<br>Slack<br>Outlook<br>Zoom | Google Drive<br>Notion<br>OneDrive<br>Dropbox | Salesforce<br>HubSpot<br>Jira / Linear<br>QuickBooks<br>Stripe / PayPal |
 
 <br>
 
@@ -574,7 +478,7 @@ Customize → **Plugins** → browse marketplace:
 
 <br>
 
-Hoặc cài lẻ từ **plugin marketplace** *(~200+ community-built)*.
+Hoặc cài lẻ từ **plugin marketplace** *(community-built, số lượng đổi nhanh theo tuần)*.
 
 > **Tip:** chưa biết bắt đầu đâu → cài đúng plugin cho **nghề của bạn**, học theo workflow Anthropic đề xuất.
 
@@ -585,7 +489,7 @@ Hoặc cài lẻ từ **plugin marketplace** *(~200+ community-built)*.
 <span class="tag">Part 5 of 7</span>
 
 # Demo Library
-## 10+ use case có thật — bám 8 tut chính chủ
+## 10+ use case có thật — bám docs + workflow mẫu
 
 ---
 
@@ -854,7 +758,7 @@ Save ./meetings/2026-05-22-clientx-prep.md"
 
 <br>
 
-> Cite cưỡng bức = giảm hallucinate xuống ~0.1%.
+> Cite cưỡng bức không xoá hallucination, nhưng biến lỗi thành thứ **dễ kiểm tra**.
 
 ---
 
@@ -903,7 +807,7 @@ Save ./meetings/2026-05-22-clientx-prep.md"
 
 <br>
 
-> ~1% câu trả lời vẫn hallucinate (techsy.io 2026). **Legal/finance bắt buộc review tay.**
+> Community estimate vẫn ghi nhận hallucination trên số liệu/citation. **Legal/finance bắt buộc review tay.**
 
 ---
 
@@ -926,7 +830,7 @@ Save ./meetings/2026-05-22-clientx-prep.md"
 - 🔋 **Máy phải awake** khi task chạy
 - 🐢 Task phức tạp 5-30 phút — đừng kỳ vọng instant
 - 💸 Pro $20 đủ cho cá nhân — schedule dày → cân nhắc Max $100
-- 🔌 Native chưa có Salesforce/Shopify/NetSuite — chờ Q2/Q3
+- 🔌 Connector gaps thay đổi nhanh — thiếu native thì dùng Chrome/MCP, nhưng test kỹ quyền ghi
 - 🤖 **KHÔNG tự ký hợp đồng / chuyển tiền** — bắt buộc human approval
 
 ---
@@ -949,47 +853,21 @@ Save ./meetings/2026-05-22-clientx-prep.md"
 
 ---
 
+<!-- _class: compact -->
+
 ## Lộ trình 30 ngày
 
-<div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:18px;font-size:22px;">
+| Day 1 | Week 1 | Month 1 |
+|---|---|---|
+| Cài Desktop<br>Tạo 1 Project<br>Chạy 1 task duy nhất *(vd: dọn Downloads)* | Connect 3 tool: Drive + Gmail + Slack<br>Viết Project Instructions<br>Setup 1 scheduled task | Cài plugin theo nghề<br>Tự build 2-3 skill<br>Dispatch từ điện thoại<br>Train team cùng dùng |
 
-<div>
-
-### Day 1
-- Cài Desktop
-- Tạo 1 Project
-- Chạy 1 task duy nhất *(vd: dọn Downloads)*
-
-</div>
-
-<div>
-
-### Week 1
-- Connect 3 tool: Drive + Gmail + Slack
-- Viết Project Instructions
-- Setup 1 scheduled task
-
-</div>
-
-<div>
-
-### Month 1
-- Cài plugin theo nghề
-- Tự build 2-3 skill
-- Dispatch từ điện thoại
-- Train team cùng dùng
-
-</div>
-
-</div>
-
-<br>
-
-> Mục tiêu **Month 1**: tiết kiệm **5 giờ/tuần** ↔ trả lại $20 Pro trong 3 ngày.
+> Mục tiêu **Month 1**: tìm 1 workflow lặp lại tiết kiệm vài giờ/tuần. Đừng scale trước khi task đầu tiên chạy ổn.
 
 ---
 
-## Resources — 8 tut chính chủ Anthropic
+<!-- _class: compact -->
+
+## Resources — 8 tutorial chọn lọc
 
 1. **Set up Cowork to work the way you do** — `claude.com/resources/tutorials/cowork-onboarding-guide`
 2. **Delegating your first task** — `.../delegating-your-first-task-in-claude-cowork`
@@ -1022,7 +900,7 @@ Save ./meetings/2026-05-22-clientx-prep.md"
 - *Cowork có an toàn cho file công ty?* → **Sandboxed shell + approval per step.** Folder bạn không grant — Claude không thấy.
 - *Có thay được nhân viên?* → Thay **việc lặp lại**, không thay **judgment**. Vẫn cần người review output.
 - *Bao lâu thì quen?* → 2-3 ngày dùng nghiêm túc theo lộ trình 30 ngày.
-- *Tiếng Việt có ổn?* → OCR + sinh tiếng Việt rất tốt từ **Opus 4.7**. Diacritics OK.
+- *Tiếng Việt có ổn?* → OCR + sinh tiếng Việt ổn với tài liệu rõ nguồn. Vẫn review tên riêng/số liệu.
 - *Cowork vs Claude Code?* → Code cho **dev** (git/build/refactor). Cowork cho **knowledge worker** (Office/email/file/browser).
 - *Có dùng được trên Linux?* → Chưa. Chỉ Mac + Windows.
 

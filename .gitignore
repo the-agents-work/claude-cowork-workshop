@@ -3,3 +3,8 @@ node_modules/
 *.log
 .env
 .env.local
+
+# Local agent state
+.taw/
+.claude/
+.claudebk/
