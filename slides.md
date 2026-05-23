@@ -6,30 +6,37 @@ paginate: true
 backgroundColor: #0b0d12
 color: #e6e8ec
 header: 'Claude Cowork Workshop · 22/05/2026'
-footer: 'nguyễn bá nghĩa · the-agents-work · ~163 attendees'
+footer: 'nguyễn bá nghĩa · the-agents-work'
 style: |
   section {
     font-family: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
-    font-size: 26px;
-    padding: 60px 70px;
+    font-size: 25px;
+    padding: 56px 68px;
   }
   section.lead {
     text-align: left;
+    padding-top: 90px;
+  }
+  section.cover {
+    background: linear-gradient(135deg, #0b0d12 0%, #1a1d27 100%);
   }
   h1 {
     color: #ffb86c;
-    font-size: 56px;
+    font-size: 54px;
     font-weight: 800;
     letter-spacing: -1px;
+    line-height: 1.05;
   }
   h2 {
     color: #8be9fd;
-    font-size: 38px;
+    font-size: 36px;
     font-weight: 700;
+    margin-bottom: 14px;
   }
   h3 {
     color: #ffb86c;
-    font-size: 28px;
+    font-size: 26px;
+    margin-top: 18px;
   }
   strong { color: #f8f8f2; }
   em { color: #bd93f9; font-style: normal; }
@@ -38,26 +45,37 @@ style: |
     color: #50fa7b;
     padding: 2px 8px;
     border-radius: 4px;
+    font-size: 0.9em;
   }
   pre {
     background: #0f1117;
     border: 1px solid #2a2d39;
     border-radius: 8px;
+    padding: 14px 18px;
+    font-size: 20px;
+  }
+  pre code {
+    background: transparent;
+    padding: 0;
+    color: #d4d4d4;
   }
   blockquote {
     border-left: 4px solid #ffb86c;
     color: #f1f5f9;
     background: #161922;
-    padding: 16px 24px;
+    padding: 14px 22px;
     border-radius: 4px;
+    margin: 12px 0;
   }
   table {
-    font-size: 22px;
+    font-size: 21px;
     width: 100%;
+    border-collapse: collapse;
   }
-  th { background: #1a1d27; color: #ffb86c; }
-  td, th { border-color: #2a2d39 !important; }
-  ul { line-height: 1.55; }
+  th { background: #1a1d27; color: #ffb86c; font-weight: 700; }
+  td, th { border: 1px solid #2a2d39 !important; padding: 8px 12px; }
+  ul, ol { line-height: 1.5; }
+  li { margin: 4px 0; }
   section::after {
     color: #6b7280;
     font-size: 16px;
@@ -67,132 +85,121 @@ style: |
     font-size: 14px;
   }
   .big {
-    font-size: 48px;
+    font-size: 44px;
     font-weight: 800;
     color: #50fa7b;
+    line-height: 1.15;
   }
   .muted { color: #9ca3af; }
   .pill {
     display: inline-block;
     background: #1f2230;
     color: #ffb86c;
-    padding: 4px 14px;
+    padding: 3px 12px;
     border-radius: 999px;
-    font-size: 18px;
-    margin-right: 6px;
+    font-size: 17px;
+    margin: 0 4px 4px 0;
+  }
+  .pill-green { background: #14322a; color: #50fa7b; }
+  .pill-cyan { background: #122b33; color: #8be9fd; }
+  .pill-purple { background: #221a36; color: #bd93f9; }
+  .tag {
+    color: #8be9fd;
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 700;
   }
 ---
 
-<!-- _class: lead -->
+<!-- _class: lead cover -->
 <!-- _paginate: false -->
 
+<span class="tag">Workshop · 22:00–00:00 EDT · 22/05/2026</span>
+
 # Claude Cowork
-## Giao việc cho AI, nhận deliverable hoàn chỉnh
+## Giao việc cho AI — nhận deliverable hoàn chỉnh
 
 <br>
 
-**Live workshop · 22:00–00:00 EDT · 22/05/2026**
-nguyễn bá nghĩa · cộng đồng Claude & Automation VN
+**nguyễn bá nghĩa** · cộng đồng Claude & AI Automation VN
 
-<span class="pill">~163 attendees</span> <span class="pill">Google Meet</span> <span class="pill">Live demo</span>
+<span class="pill pill-cyan">163 attendees</span> <span class="pill pill-purple">Google Meet</span> <span class="pill pill-green">Live demo + Q&A</span>
 
 ---
 
 ## Mình là ai
 
-- **Nguyễn Bá Nghĩa** — admin cộng đồng Claude & AI Automation Việt Nam (~100k)
-- Hằng ngày ship side-project bằng Claude (Code, Cowork, MCP)
-- Tin: AI agent phải làm được việc *trên máy mình* mới đáng tiền — không phải để hỏi câu hỏi
+- **Nguyễn Bá Nghĩa** — admin cộng đồng Claude & AI Automation Việt Nam *(~100k thành viên)*
+- Ship side-project bằng **Claude Code + Cowork + MCP** hằng ngày
+- Tin: AI agent phải **làm được việc trên máy mình** mới đáng tiền
 
 <br>
 
-> Workshop tối nay: **demo từ A → Z**, không lý thuyết suông. Ai theo kịp mở máy làm cùng.
+> Workshop tối nay không phải để hỏi "Claude là gì". Mà để **xem nó làm việc thật**, hands-on, từ A → Z. Ai theo kịp mở máy làm cùng.
 
 ---
 
-## Agenda 2 tiếng
+## Agenda (2 giờ)
 
-1. Cowork là gì — khác Chat thế nào? *(10 phút)*
-2. Workflow 3 bước · plan-first · mid-steering *(10 phút)*
-3. **Live demo** — 4 use case thật *(45 phút)*
-4. MCP: nối Gmail / Drive / Slack / Zoom *(20 phút)*
-5. Scheduled task — chạy auto mỗi ngày/tuần *(15 phút)*
-6. Tips chống hallucinate · limitations *(10 phút)*
-7. Q&A thoải mái *(còn lại)*
+| # | Phần | Thời lượng |
+|---|---|---|
+| 1 | **Vì sao Cowork?** vấn đề & timeline | 8 phút |
+| 2 | **Kiến trúc** — Levels 1-3 + Advanced | 12 phút |
+| 3 | **Workflow** — plan-first, mid-steering | 8 phút |
+| 4 | **Setup** từ A → Z, project đầu tiên | 12 phút |
+| 5 | **Demo Library** — 10+ use case live | 45 phút |
+| 6 | **Prompt patterns** — bí kíp ra output xịn | 15 phút |
+| 7 | **Tips · limits · Q&A** | còn lại |
 
 ---
 
 <!-- _class: lead -->
 
-# Part 1
-## Cowork là gì & vì sao đáng quan tâm
+<span class="tag">Part 1 of 7</span>
+
+# Vì sao Cowork?
+## Vấn đề bạn đang gặp & lời giải mới
 
 ---
 
-## Cowork là gì?
+## Vấn đề ngầm với Chat
 
-> *"Delegate to Claude, delight in the result. Hand off a task — get a polished deliverable."*
-> — claude.com/cowork
+Bạn dùng Claude/ChatGPT mỗi ngày, nhưng:
+
+- 🔄 **Copy-paste qua lại** giữa app & chatbot
+- 📎 **Upload từng file** — limit, hết quota, không nhớ
+- 🧠 **Phải brief lại** mỗi conversation
+- 📤 **Output trong chat** — phải save thủ công ra file
+- ⏰ Không có gì **tự chạy** sau khi đóng máy
 
 <br>
 
-- Không phải chatbot trả lời câu hỏi
-- Là **agent tự làm việc** trên máy của bạn
-- Bạn mô tả **outcome** → Claude lên plan → mở app, sửa file, gọi API, làm ra **kết quả gửi lại**
-
-<span class="big">Mô tả → Claude làm → Bạn duyệt</span>
+> Bạn không cần một **chatbot thông minh hơn**. Bạn cần một **đồng nghiệp biết tự làm việc**.
 
 ---
 
-## Timeline ra mắt
-
-| Mốc | Sự kiện |
-|---|---|
-| **01/2026** | Research preview — invite-only |
-| **04/2026** | **GA cho mọi user Pro** *(9/4/2026)* |
-| **04/2026** | 6 enterprise feature: RBAC, spend limits, OpenTelemetry, Zoom MCP, audit |
-| **05/2026** | Mobile-trigger beta: ra lệnh từ điện thoại, máy bàn làm |
-
-<br>
-
-> Đây là lý do tối nay đáng tới: Cowork **mới GA 1 tháng**, đa số người còn chưa biết.
-
----
-
-## Chat vs Cowork — khác gì?
-
-| | **Claude Chat** | **Claude Cowork** |
-|---|---|---|
-| Mục đích | Trả lời, brainstorm | **Hoàn thành task** |
-| Phạm vi | Conversation | **File hệ thống + apps** |
-| Output | Text trong chat | **File, report, spreadsheet** |
-| Thời gian | Tức thì | Phút → giờ → ngày |
-| Lặp lại | Hỏi lại mỗi lần | **Schedule chạy auto** |
-| Yêu cầu | Free / Pro | **Pro $20+ · Desktop app** |
-
----
-
-## Cowork vs Claude Code — chọn cái nào?
+## Cowork = bước nhảy khái niệm
 
 <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;">
 
 <div>
 
-### Claude Code
-- Dành cho **developer**
-- Chạy trong terminal
-- Git, build, test, refactor
-- Output: **code commit**
+### Claude Chat
+- Bạn **dẫn** mọi bước
+- Output là **text trong chat**
+- "Smart conversation"
+- Phải copy-paste để dùng
 
 </div>
 
 <div>
 
 ### Claude Cowork
-- Dành cho **knowledge worker**
-- Desktop app GUI
-- Office, email, browser, file
-- Output: **report, sheet, doc**
+- Bạn **mô tả mục tiêu**
+- Output là **file hoàn chỉnh**
+- "Delegate, it delivers"
+- Save trực tiếp vào folder
 
 </div>
 
@@ -200,14 +207,168 @@ nguyễn bá nghĩa · cộng đồng Claude & Automation VN
 
 <br>
 
-> Slogan chính chủ: **"Cowork = Claude Code power for knowledge work"**
+<span class="big">Chat trả lời · Cowork làm việc</span>
+
+> *"Hand off a task, get a polished deliverable."* — claude.com/cowork
+
+---
+
+## Timeline ra mắt
+
+| Mốc | Sự kiện | Ý nghĩa |
+|---|---|---|
+| **01/2026** | Research preview (invite-only, Max-only) | Beta hẹp |
+| **04/2026 (early)** | Mở cho Pro $20 | Đại trà cho cá nhân |
+| **09/04/2026** | **GA chính thức** + 6 enterprise feature | Enterprise-ready |
+| **05/2026** | Mobile-trigger beta — "Dispatch" | Ra lệnh từ điện thoại |
+
+<br>
+
+> Cowork **mới GA 6 tuần**. Đây là lý do anh em VN nên học sớm — còn ít competition.
+
+---
+
+## 4 con số đáng nhớ
+
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;font-size:22px;">
+
+<div>
+
+### <span style="color:#50fa7b">$20/tháng</span>
+Mức tối thiểu — Claude Pro. Cowork bật sẵn, không phí thêm.
+
+### <span style="color:#50fa7b">~200+ plugin</span>
+Marketplace MCP, tăng nhanh hằng tuần.
+
+</div>
+
+<div>
+
+### <span style="color:#50fa7b">8 official tutorial</span>
+Anthropic tự viết — Legal, Sales, Marketing, SMB...
+
+### <span style="color:#50fa7b">~1%</span>
+Tỉ lệ hallucinate còn lại → bắt buộc review tay output cao rủi ro.
+
+</div>
+
+</div>
 
 ---
 
 <!-- _class: lead -->
 
-# Part 2
-## Workflow — Cowork làm việc thế nào
+<span class="tag">Part 2 of 7</span>
+
+# Kiến trúc Cowork
+## Levels 1-3 + Advanced — theo Anthropic
+
+---
+
+## Bức tranh tổng
+
+```
+                  ┌─────────────────────────────────┐
+                  │  PLUGIN (Level 3 — bundle)      │
+                  │  ┌───────────────────────────┐  │
+                  │  │ SKILL (Level 2 — capture) │  │
+                  │  │  ┌─────────────────────┐  │  │
+                  │  │  │ CONNECTORS + INSTR  │  │  │
+                  │  │  │ (Level 1 — context) │  │  │
+                  │  │  └─────────────────────┘  │  │
+                  │  └───────────────────────────┘  │
+                  └─────────────────────────────────┘
+                            ↑ ADVANCED ↑
+                  /schedule · Live Artifacts · Dispatch
+```
+
+> Mỗi tầng **đóng gói tầng dưới**. Lên tầng nào tuỳ độ trưởng thành.
+
+---
+
+## Level 1: Context & Tools
+
+### Connectors
+Kết nối các hệ thống công việc — Slack, Salesforce, Microsoft 365, Jira, QuickBooks, HubSpot, Drive... Bật từ sidebar **Customize**.
+
+> *Claude có thể đọc dữ liệu **và ghi lại**: cập nhật ticket, soạn email, đăng bài, lưu tệp.*
+
+### Instructions (3 tầng)
+- **Global** — áp mọi project *(Settings → Cowork → Global instructions)*
+- **Project** — chỉ trong project đó *(bảng phải Project)*
+- **Organization** — admin enterprise set cho cả công ty
+
+---
+
+## Level 2: Skills — đóng gói chuyên môn
+
+**Skill = tệp hướng dẫn cho nhiệm vụ lặp lại.**
+
+Dùng bằng cách:
+- Gõ `/skill-name` *(vd: `/brief`, `/account-research`)*
+- Hoặc mô tả tự nhiên — Claude tự tìm skill phù hợp
+
+<br>
+
+**Cách tạo skill:**
+> *"Gói những gì chúng ta vừa làm thành một skill."*
+
+Sau đó Claude đặt tên, lưu file, gắn vào project. Lần sau gọi tên là chạy được.
+
+---
+
+## Level 3: Plugins — bundle to share
+
+**Plugin = Connectors + Skills gộp lại thành 1 package.**
+
+Anthropic ship sẵn 4 plugin chính:
+
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:18px;font-size:23px;">
+
+<div>
+
+### 🧑‍💼 Sales
+`/account-research` · `/call-summary` · CRM connector
+
+### ⚖️ Legal
+`/brief` skill · document sources · citation auto
+
+</div>
+
+<div>
+
+### 📊 Product / Marketing Ops
+weekly review prep · metrics dashboard
+
+### 🏢 Operations / SMB
+QB + PayPal + HubSpot · monthly close
+
+</div>
+
+</div>
+
+---
+
+## Advanced: 3 superpower
+
+| Feature | Làm gì | Khi dùng |
+|---|---|---|
+| **`/schedule`** | Chạy prompt theo lịch (hourly/daily/weekly) | Brief sáng, report Sunday, monthly close |
+| **Live Artifacts** | Dashboard / tracker pin sidebar, auto-refresh | Theo dõi metrics real-time mở-lại-là-thấy |
+| **Dispatch** | Trigger task từ điện thoại → desktop làm | Đang đi cafe, ra lệnh "soạn báo cáo Q" |
+
+<br>
+
+> 3 cái này là khác biệt **đáng tiền** so với Chat. Đừng bỏ qua.
+
+---
+
+<!-- _class: lead -->
+
+<span class="tag">Part 3 of 7</span>
+
+# Workflow
+## Cowork làm việc thế nào (chính chủ)
 
 ---
 
@@ -218,21 +379,22 @@ nguyễn bá nghĩa · cộng đồng Claude & Automation VN
 <div>
 
 ### 1. Describe
-Mô tả task bằng tiếng Việt từ desktop *hoặc điện thoại*
+Mô tả output mong muốn + nguồn dữ liệu.
+Desktop **hoặc** điện thoại (Dispatch).
 
 </div>
 
 <div>
 
 ### 2. Execute
-Claude lên plan, làm việc, *xin duyệt trước các bước quan trọng*
+Claude lên plan → hỏi clarifying → **làm song song nhiều nguồn** → xin duyệt bước quan trọng.
 
 </div>
 
 <div>
 
 ### 3. Review
-Bạn approve, sửa hướng, hoặc để chạy schedule định kỳ
+Approve, redirect, hoặc để **schedule** chạy định kỳ.
 
 </div>
 
@@ -240,7 +402,7 @@ Bạn approve, sửa hướng, hoặc để chạy schedule định kỳ
 
 <br>
 
-> Bạn có thể đứng nhìn realtime hoặc đi pha cà phê — quay lại check sau.
+> Watch realtime hoặc đóng máy đi pha cà phê. Quay lại check.
 
 ---
 
@@ -248,21 +410,21 @@ Bạn approve, sửa hướng, hoặc để chạy schedule định kỳ
 
 ```
 Bạn: "Dọn folder Downloads"
-   ↓
-Claude: "Tôi sẽ làm:
+
+Claude:  Tôi sẽ:
   1. Scan 312 file trong Downloads
-  2. Tạo thư mục: Documents/, Images/, Videos/, Archives/
-  3. Sắp xếp theo extension + ngày tạo
-  4. Đánh dấu 14 file trùng để bạn duyệt xóa
-  Approve? [Yes / Edit / Cancel]"
+  2. Tạo: Documents/, Images/, Videos/, Archives/
+  3. Sort theo extension + ngày tạo
+  4. Đánh dấu 14 file duplicate để review
+
+         Approve? [Yes / Edit / Cancel]
 ```
 
-<br>
-
 **3 nút quyền lực:**
-- ✅ **Yes** — Claude chạy phần còn lại
-- ✏️ **Edit** — chỉnh plan trước khi chạy
-- ❌ **Cancel** — dừng, không động vào file
+
+<span class="pill pill-green">✅ Yes</span> Claude chạy phần còn lại
+<span class="pill pill-cyan">✏️ Edit</span> Chỉnh plan trước khi chạy
+<span class="pill">❌ Cancel</span> Dừng, không động vào file
 
 ---
 
@@ -270,139 +432,91 @@ Claude: "Tôi sẽ làm:
 
 Đang chạy giữa chừng → bạn vẫn **chen ngang được**:
 
-- *"Khoan, đừng xóa cái này"*
-- *"Chuyển hết file Hợp đồng vào folder Legal nhé"*
-- *"Output đổi sang format markdown thay vì PDF"*
+- *"Khoan, đừng xoá cái này."*
+- *"File Hợp đồng cho hết vào Legal/."*
+- *"Output đổi sang Markdown thay vì PDF."*
+- *"Chỉ sort 100 file mới nhất, bỏ qua phần kia."*
 
 <br>
 
-> Đây là điểm khác biệt lớn nhất với automation truyền thống (Zapier, Make):
-> **Bạn có thể can thiệp bằng ngôn ngữ tự nhiên giữa chừng.**
+> Đây là điểm khác biệt **lớn nhất** với automation truyền thống (Zapier, Make, n8n):
+> **Bạn can thiệp bằng ngôn ngữ tự nhiên — giữa chừng.**
+
+---
+
+## "Put what matters in files"
+
+Một câu của Anthropic, vàng:
+
+> *"Cowork doesn't remember between sessions like Chat does."*
+
+<br>
+
+**Hệ quả:**
+- Đừng dựa vào chat history — nó **không nhớ**
+- Mọi rule lâu dài → viết vào **Project Instructions** hoặc file `CLAUDE.md`
+- Tài liệu tham khảo → để trong **folder project**, đừng paste
+- Output muốn dùng tiếp → bắt Claude **save ra file**
 
 ---
 
 <!-- _class: lead -->
 
-# Part 3
-## Live Demo — 4 use case có thật
+<span class="tag">Part 4 of 7</span>
+
+# Setup
+## Từ 0 → task đầu tiên trong 15 phút
 
 ---
 
-## Demo 1 — Giao task phức tạp
+## Prep checklist
 
-**Prompt:**
-```
-Mở folder /Documents/01_23-Product-Meeting.
-Đọc hết notes Q1 + project doc, viết Q1 Product Update Report:
-  - Executive Summary
-  - Launch Milestones
-  - Key Decisions
-  - What's Next
-Format brand company, lưu cùng folder.
-```
-
-**Cowork sẽ:**
-1. Liệt kê 23 file phát hiện được → hỏi xem có cần loại bỏ file nào không
-2. Đọc tuần tự, trích quote + ngày + người ra quyết định
-3. Soạn report ~6 trang theo template, save `.docx`
-4. Báo lại: "Done. Có 3 chỗ tôi không chắc, đã highlight để bạn review."
+- [ ] **Tài khoản Claude Pro** $20/tháng *(Max $100 nếu muốn unlimited)* — claude.com/pricing
+- [ ] **Claude Desktop app** *(Cowork KHÔNG có trên browser)* — claude.com/download
+- [ ] OS: macOS hoặc Windows
+- [ ] Máy phải **awake** khi Cowork chạy task
+- [ ] **Chrome extension** "Claude in Chrome" — bắt buộc nếu muốn browser automation
+- [ ] Folder sandbox riêng — gợi ý `~/Cowork-Sandbox/`
 
 ---
 
-## Demo 2 — Dọn folder Downloads lộn xộn
+## Bước 1: Tạo Project đầu tiên
 
-**Trước:** 312 file random, từ `Screenshot 2025-11-17.png` → `chuong-trinh_v3_final_FINAL.pdf`
-
-**Sau (Cowork tự đề xuất):**
-```
-Downloads/
-├── Documents/       (PDF, DOCX, contracts)
-├── Spreadsheets/    (XLSX, CSV)
-├── Images/          (PNG, JPG, screenshots)
-├── Audio-Video/     (MP4, MP3)
-├── Archives/        (ZIP, RAR)
-└── _to-review/      (14 file trùng/không rõ)
-```
-
-> Tip: lần đầu, đừng cho auto-execute. **Approve từng nhóm** để học cách nó suy luận.
-
----
-
-## Demo 3 — Hóa đơn → Spreadsheet
-
-Bạn quẳng vào folder 30 ảnh hoá đơn (cả tiếng Việt) + nói:
+**Một Project = một home cho công việc.**
 
 ```
-"Trích xuất: ngày, nhà cung cấp, mã hoá đơn, số tiền (VND),
-loại chi phí. Gộp thành 1 sheet. Loại bỏ duplicate."
+File → New Project → "Q1 Marketing Review"
+   ↓
+Chọn folder: ~/Documents/q1-marketing/
+   ↓
+Claude có quyền: đọc, ghi, tạo file trong folder này
 ```
 
 <br>
 
-**Output:** `chi-phi-thang-5.xlsx`
-
-| Ngày | Nhà cung cấp | Mã | VND | Loại |
-|---|---|---|---|---|
-| 2026-05-03 | Grab | INV-882 | 184,000 | Đi lại |
-| 2026-05-04 | Co.opmart | 4192 | 562,300 | Văn phòng phẩm |
-| … | … | … | … | … |
+> Mọi file Claude đọc (PDF, sheet, doc) hoặc tạo ra đều ở **chính folder bạn chọn**. Không upload, không cloud lạ.
 
 ---
 
-## Demo 4 — Tổng hợp đa nguồn
+## Bước 2: Connect tools
 
-**Prompt:**
-```
-Gộp dữ liệu báo cáo tuần này:
-  - Metrics từ Google Analytics dashboard
-  - Số đơn từ Stripe
-  - Feedback khách trong inbox Gmail (tag "feedback")
-  - Update task từ Linear
+Sidebar phải → **Customize** → **Connectors** → bấm Authorize:
 
-Viết bản tin 1 trang gửi team, kèm 3 insight nổi bật.
-```
-
-<br>
-
-> Đây là chỗ Cowork **vượt xa** Chat: nó **mở 4 nguồn cùng lúc**, đối chiếu, viết report — thay vì bạn copy-paste từng cái.
-
----
-
-<!-- _class: lead -->
-
-# Part 4
-## MCP — chìa khoá kết nối mọi thứ
-
----
-
-## MCP là gì (siêu rút gọn)
-
-**MCP = Model Context Protocol** — chuẩn mở do Anthropic ra, cho phép Claude kết nối tới **bất kỳ tool nào** có MCP server.
-
-<br>
-
-Hình dung như:
-> *USB-C cho AI* — một chuẩn cắm chung, app nào hỗ trợ thì Claude xài được.
-
-<br>
-
-Bạn **không cần code**. Cowork có sẵn marketplace để click cài.
-
----
-
-## Connector phổ biến nhất
-
-<div style="display:grid;grid-template-columns:1fr 1fr;gap:30px;">
+<div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px;font-size:21px;">
 
 <div>
 
-### Communication
+**Communication**
 - Gmail
 - Slack
-- Zoom *(GA 4/2026)*
 - Outlook
+- Zoom *(GA 4/2026)*
 
-### Files & Notes
+</div>
+
+<div>
+
+**Files & Notes**
 - Google Drive
 - Notion
 - OneDrive
@@ -412,17 +526,12 @@ Bạn **không cần code**. Cowork có sẵn marketplace để click cài.
 
 <div>
 
-### Work tools
-- Linear
-- Asana
-- Jira
+**Work**
+- Salesforce
 - HubSpot
-- Stripe
+- Jira / Linear
 - QuickBooks
-
-### Browser
-- Chrome (Computer Use)
-- Tự động click, scroll, fill form
+- Stripe / PayPal
 
 </div>
 
@@ -430,83 +539,354 @@ Bạn **không cần code**. Cowork có sẵn marketplace để click cài.
 
 <br>
 
-> Marketplace còn ~200 plugin community-built, đang tăng nhanh.
+> Sau khi connect: nói *"check Slack tuần này"* — Claude tự pull, không paste.
 
 ---
 
-## Demo MCP — connect Gmail
+## Bước 3: Viết Project Instructions
 
-**Bước 1.** Cowork → Settings → Connectors → Gmail → Authorize
+Đây là **bộ não cố định** của project. Vd:
 
-**Bước 2.** Trong chat:
 ```
-"Tổng hợp email tuần này theo 3 nhóm:
-   - Khách quan trọng (VIP)
-   - Cần phản hồi gấp
-   - Spam/Newsletter (đề xuất xoá)
-Trả về danh sách + draft reply cho nhóm 2."
+Tôi là PM team Product. Khi viết report:
+  - Tone: chuyên nghiệp, ngắn gọn, có số
+  - Format: Markdown, H2/H3, bullet
+  - Nếu thấy số liệu — luôn cite file nguồn
+  - Không tự suy diễn. Không chắc → hỏi tôi.
+  - Tên team: Andie, Long, Phương, Vinh
+  - Save mọi output vào ./reports/YYYY-MM-DD-*.md
 ```
 
-**Bước 3.** Claude show plan → bạn approve → output:
-- 47 email phân loại sẵn
-- 8 draft reply trong folder `_drafts`
-- 1 file `summary.md`
+<br>
+
+> Instructions này áp **mọi task** trong project. Đỡ phải nhắc lại mỗi prompt.
+
+---
+
+## Bước 4: Cài plugin
+
+Customize → **Plugins** → browse marketplace:
+
+- **Sales** — `/account-research`, `/call-summary`, CRM connector
+- **Legal** — `/brief`, citation engine, doc sources
+- **Product** — sprint review, roadmap update
+- **Operations** — bookkeeping, payroll, month-end close
+
+<br>
+
+Hoặc cài lẻ từ **plugin marketplace** *(~200+ community-built)*.
+
+> **Tip:** chưa biết bắt đầu đâu → cài đúng plugin cho **nghề của bạn**, học theo workflow Anthropic đề xuất.
 
 ---
 
 <!-- _class: lead -->
 
-# Part 5
-## Scheduled Task — Cowork thành nhân viên 24/7
+<span class="tag">Part 5 of 7</span>
+
+# Demo Library
+## 10+ use case có thật — bám 8 tut chính chủ
 
 ---
 
-## Scheduled task workflow
+## Demo Group A — File & Document
 
-**Setup 1 lần, chạy mãi mãi:**
+### A1. Dọn folder Downloads (lộn xộn)
 
 ```
-Task: "Daily email digest"
-Cadence: 08:00 mỗi ngày
-Steps:
-  1. Đọc inbox Gmail từ 17h hôm qua → 08h hôm nay
-  2. Lọc bỏ newsletter + promo
-  3. Phân loại: VIP / cần reply / FYI / spam
-  4. Gửi summary vào Slack #personal-brief
-  5. Đánh sao 5 email cần xử lý nhất
+Prompt: "Organize my Downloads folder: move PDFs to
+Documents/, images to Images/, videos to Videos/,
+archives to Archives/. Rename each file với prefix
+ngày hôm nay. Đánh dấu file duplicate."
 ```
 
-Mỗi sáng mở máy → đã có brief sẵn.
+**Output:** Folder có cấu trúc, 14 file dup được flag review.
 
 ---
 
-## Ý tưởng schedule cho dân văn phòng
+## A2. Batch rename theo pattern
 
-- **8:00 hằng ngày** — Brief email + lịch hôm nay
-- **Thứ Hai 9:00** — Pull metrics tuần trước, điền template báo cáo
-- **Thứ Sáu 17:00** — Slack digest tuần + ghi vào weekly review
-- **Ngày 1 hàng tháng** — Bookkeeping: gộp hoá đơn → spreadsheet → gửi kế toán
-- **Mỗi giờ** — Theo dõi inbox khách VIP, ping Slack nếu có email từ họ
-- **Ngày 25 hàng tháng** — Chuẩn bị slide báo cáo monthly review
+```
+Prompt: "Rename all 50 photos in Vacation folder
+theo pattern Hanoi_2026_001.jpg → Hanoi_2026_050.jpg,
+sort theo thời gian chụp trong EXIF."
+```
 
-> Mỗi task chạy được = ~1 giờ/ngày tiết kiệm → trả lại $20 Pro trong 1 tuần.
+**Output:** 50 file đổi tên đúng thứ tự thời gian.
+
+---
+
+## A3. Drive download + organize
+
+```
+Prompt: "Download tất cả file từ folder 'Work Projects'
+trên Google Drive, organize locally theo tên project,
+tạo file INDEX.md liệt kê từng project + 1 dòng tóm tắt."
+```
+
+**Output:** Cấu trúc folder + index document.
+
+---
+
+## Demo Group B — Document Creation
+
+### B1. PowerPoint từ outline
+
+```
+Prompt: "Create 10-slide PPT về 'remote work best
+practices' — intro, 7 content slide, summary, Q&A.
+Theme blue, font Inter. Save: ./remote-work-tips.pptx"
+```
+
+**Output:** File `.pptx` hoàn chỉnh, mở Keynote/PPT dùng được.
+
+---
+
+## B2. Blog post 1000 từ
+
+```
+Prompt: "Write 1000-word blog post: 'AI assistants —
+benefits cho dân văn phòng VN'. Cấu trúc intro,
+4 main points, conclusion. Save `.docx`."
+```
+
+**Output:** Bài viết format đẹp, ready-to-publish.
+
+### B3. Invoice template Excel
+
+```
+Prompt: "Create professional invoice template Excel.
+Có: business info, bill-to, items table với formula
+auto tính subtotal/tax/total. Bilingual VI/EN."
+```
+
+**Output:** `invoice-template.xlsx` ready in dùng.
+
+---
+
+## Demo Group C — Data Processing
+
+### C1. Expense tracker với công thức
+
+```
+Prompt: "Create expense tracking spreadsheet:
+categories (Food, Transport, Entertainment, Utilities,
+Health). Formula auto-sum theo tháng + biểu đồ pie
+breakdown. Currency VND."
+```
+
+**Output:** Sheet với formula `SUMIF`, chart sẵn.
+
+---
+
+## C2. Merge 5 CSV regions
+
+```
+Prompt: "Merge 5 file CSV sales từ 5 vùng. Chuẩn hoá
+date về YYYY-MM-DD, xoá duplicate, sort theo date,
+add column 'region' từ tên file gốc."
+```
+
+**Output:** `sales-merged.csv` clean, ready cho analysis.
+
+### C3. Hoá đơn ảnh → Spreadsheet
+
+```
+Prompt: "Trích xuất 30 ảnh hoá đơn trong /receipts:
+ngày, nhà cung cấp, mã, số tiền (VND), loại chi phí.
+Gộp 1 sheet, xoá duplicate, sort theo ngày."
+```
+
+**Output:** `chi-phi-thang-5.xlsx` đầy đủ.
+
+---
+
+## Demo Group D — Research
+
+### D1. Tổng hợp 5 PDF nghiên cứu
+
+```
+Prompt: "Read 5 PDF research papers in /research-Q1,
+tạo summary identifying:
+  - Common themes (3-5)
+  - Conflicts / disagreements
+  - Key statistics
+Cite từng claim với (paper, page).
+Save: ./Q1-research-synthesis.md"
+```
+
+**Output:** Doc tổng hợp có chú thích học thuật chuẩn.
+
+---
+
+## Demo Group E — Persona Workflows
+
+### E1. SMB — Monday Morning Brief
+*(theo tut "Cowork for your small business")*
+
+```
+/schedule daily 8:00 weekdays:
+  - Cash position (QuickBooks)
+  - Settlements hôm qua (PayPal)
+  - Pipeline status (HubSpot)
+  - Lịch hôm nay (Calendar)
+Tổng hợp 1 trang, gửi Slack #morning-brief.
+```
+
+> Mở máy lên đã có brief sẵn. Quyết định trong 2 phút.
+
+---
+
+## E2. Sales — Account research trước call
+*(plugin Sales, skill `/account-research`)*
+
+```
+Pre-call:
+   /account-research Acme Corp
+
+Output trong 90 giây:
+  ✓ Spend trajectory 12 tháng (CRM)
+  ✓ Stakeholder map (LinkedIn + email history)
+  ✓ Product adoption %
+  ✓ Open deals + risk signals
+
+Post-call:
+   /call-summary [transcript]
+
+→ Action items + internal note + draft follow-up
+```
+
+---
+
+## E3. Marketing Ops — Weekly review tự prep
+*(tut chính chủ "marketing-ops-review")*
+
+```
+/schedule sunday 17:00:
+  - Pull metrics từ GA4 + HubSpot + Linear
+  - Drag email feedback tag "marketing"
+  - Soạn draft 1 trang detailed metrics
+  - + 1 slide leadership summary
+  - Flag 3 chỗ chưa rõ để team review thứ Hai
+```
+
+> Sunday Claude làm. Monday 9:00 team review — không còn "ai pull metrics?".
+
+---
+
+## E4. Legal — `/brief` daily
+*(plugin Legal, tut chính chủ)*
+
+```
+/schedule daily 7:30:
+  /brief — quét tất cả vụ việc connected sources:
+    ✓ Cái gì due hôm nay
+    ✓ Cái gì NEW từ hôm qua
+    ✓ Urgent matters (red flag)
+  Mọi claim có CITATION → click ra source line gốc
+```
+
+> Trước khi sign-off: click citation, đọc tay nguồn gốc.
+
+---
+
+## E5. PM — Meeting prep auto
+
+```
+"Pull all files in /ClientX-folder, tạo briefing:
+  - Project status hiện tại
+  - Recent updates 7 ngày
+  - Pending items + owner
+  - 5 talking point nên đề cập
+Save ./meetings/2026-05-22-clientx-prep.md"
+```
+
+### E6. Personal — Weekly Life Review
+
+```
+/schedule sunday 20:00:
+  - Email cá nhân tuần: highlight bạn bè quan trọng
+  - Lịch tuần sau: conflict?
+  - File chi tiêu cá nhân tuần này
+  - Tổng hợp 1 trang gửi Notion 'weekly-review'
+```
 
 ---
 
 <!-- _class: lead -->
 
-# Part 6
-## Tips & Pitfalls — Để không bị "AI lừa"
+<span class="tag">Part 6 of 7</span>
+
+# Prompt Patterns
+## 5 bí kíp để ra output xịn
 
 ---
 
-## 5 nguyên tắc ra output chất
+## Pattern 1: Scope chính xác
 
-1. **Đặt scope rõ ràng** — nói rõ folder nào, file nào, deadline nào
-2. **Cho ví dụ output mong muốn** — gắn 1 sample report cũ → Claude bắt chước style
-3. **Approve từng phần** lần đầu — đừng auto cả pipeline ngày 1
-4. **Dùng `CLAUDE.md`** trong folder — viết rule cố định cho Cowork đọc
-5. **Yêu cầu cite nguồn** — bắt nó ghi rõ data lấy từ file/email nào
+❌ *"Dọn folder của tôi"*
+
+✅ *"Dọn folder `~/Downloads/` (chỉ files trước 01/05/2026), move PDF vào Documents/, ảnh vào Images/. Không động đến file < 7 ngày tuổi."*
+
+<br>
+
+> **Càng rõ scope, càng ít hallucinate.** Quy tắc: nếu một fresher nhìn vào prompt phải hỏi lại → prompt chưa đủ.
+
+---
+
+## Pattern 2: Reference connected tools, không paste
+
+❌ Copy-paste 20 email vào chat
+
+✅ *"Check Gmail tuần này, lọc tag 'feedback', tóm tắt theo nhóm: bug · feature request · complaint."*
+
+<br>
+
+> Sau khi đã connect Gmail/Drive/Slack — **gọi tên là dùng được**, đừng paste. Cowork tự pull đúng phạm vi.
+
+---
+
+## Pattern 3: Yêu cầu cite nguồn
+
+❌ *"Viết summary các meeting Q1"*
+
+✅ *"Viết summary các meeting Q1. **Mỗi số liệu hoặc quote phải có format `(file.md, line X)` hoặc `(meeting-2026-03-15.md)`. Nếu không tìm được nguồn — ghi `[no-source]` thay vì đoán.**"*
+
+<br>
+
+> Cite cưỡng bức = giảm hallucinate xuống ~0.1%.
+
+---
+
+## Pattern 4: Đưa template / ví dụ output
+
+❌ *"Viết report Q1"*
+
+✅ *"Viết report Q1, theo template `./templates/quarterly-report-template.md`. Style giống `./reports/q4-2025.md` *(file mẫu đính kèm)*. Giữ heading + section order giống y."*
+
+<br>
+
+> Cho Claude **1 file mẫu** = giảm 90% nguy cơ output lệch tone/format.
+
+---
+
+## Pattern 5: Sign-off workflow
+
+❌ Auto-execute hết, đêm về kiểm tra
+
+✅ *"Plan trước → tôi approve → execute. Nếu gặp file > 10MB hoặc file `.contract.*` — **dừng, hỏi tôi**. Output cuối: draft mode trong `_drafts/`, không ghi đè bản gốc."*
+
+<br>
+
+> Sign-off gate = nệm an toàn cho task quan trọng. Mất 5 giây bấm Yes, đỡ 5 giờ recovery.
+
+---
+
+<!-- _class: lead -->
+
+<span class="tag">Part 7 of 7</span>
+
+# Tips · Limits · Q&A
 
 ---
 
@@ -514,110 +894,141 @@ Mỗi sáng mở máy → đã có brief sẵn.
 
 | Vấn đề | Cách chặn |
 |---|---|
-| Claude bịa số liệu | Bắt **trích nguồn từng số**: "(file X, dòng Y)" |
-| Claude tự suy diễn | Thêm: *"Nếu không chắc, hỏi tôi, đừng đoán"* |
-| Output rỗng tuếch | Cho **template + ví dụ** đính kèm |
-| Sửa nhầm file quan trọng | Bật **"draft only mode"** — không ghi đè bản gốc |
-| Lệch tone công ty | Đính `brand-voice.md` vào folder làm việc |
+| Bịa số liệu | Bắt cite `(file, line)` từng số |
+| Tự suy diễn | Thêm: *"Không chắc → hỏi, đừng đoán"* |
+| Output rỗng tuếch | Cho template + sample file đính kèm |
+| Sửa nhầm file gốc | Bật **"draft only mode"** — output vào `_drafts/` |
+| Lệch tone công ty | Pin `brand-voice.md` vào project |
+| Quên rule giữa session | Đưa hết vào **Project Instructions** |
 
 <br>
 
-> Theo techsy.io 2026: **~1% câu trả lời** vẫn có hallucinate.
-> → Output legal/finance **bắt buộc** review tay.
+> ~1% câu trả lời vẫn hallucinate (techsy.io 2026). **Legal/finance bắt buộc review tay.**
+
+---
+
+## Common errors + fixes
+
+| Lỗi | Nguyên nhân | Fix |
+|---|---|---|
+| *"Claude can't access my files"* | Folder chưa grant permission | System Pref → Privacy → Files & Folders → bật Claude |
+| First launch chậm | Tải sandbox runtime ~1.2GB | Đợi 3-5 phút lần đầu, sau nhanh |
+| Connector ngắt | OAuth token hết hạn | Customize → Connectors → Re-authorize |
+| Schedule không chạy | Máy sleep | Settings → Energy Saver → Prevent sleep khi cắm sạc |
+| Output trống | Prompt scope mơ hồ | Áp dụng Pattern 1: scope chính xác |
 
 ---
 
 ## Limitations cần biết trước
 
-- 🇺🇸 **Default host US** — EU data residency chỉ có Enterprise
-- 🔌 **Marketplace MCP** còn non — chưa có native Salesforce/Shopify/NetSuite
-- 🐢 **Không phải lúc nào cũng nhanh** — task phức tạp 5–30 phút
-- 💸 **Pro $20** là tối thiểu, hết quota nhanh nếu schedule dày
-- 🔒 **Sandboxed shell** — không phải toàn quyền máy, có scope folder rõ
-- 🤖 **Không tự ký hợp đồng / chuyển tiền** — bắt buộc human approval ở các bước nhạy cảm
+- 🇺🇸 **Default host US** — EU data residency chỉ có **Enterprise**
+- 💻 **Chỉ Desktop app** Mac/Win — không browser, không mobile (Dispatch beta)
+- 🔋 **Máy phải awake** khi task chạy
+- 🐢 Task phức tạp 5-30 phút — đừng kỳ vọng instant
+- 💸 Pro $20 đủ cho cá nhân — schedule dày → cân nhắc Max $100
+- 🔌 Native chưa có Salesforce/Shopify/NetSuite — chờ Q2/Q3
+- 🤖 **KHÔNG tự ký hợp đồng / chuyển tiền** — bắt buộc human approval
 
 ---
 
-## Khi nào *KHÔNG* nên dùng Cowork
+## Khi nào KHÔNG nên dùng Cowork
 
-- ❌ Quyết định pháp lý / tài chính cuối cùng (drafting OK, ra quyết định không)
-- ❌ Dữ liệu siêu nhạy cảm chưa qua DPA — chờ Enterprise + BAA
-- ❌ Task < 30 giây — overhead plan/approve không đáng
-- ❌ Bạn không có thời gian review output — sẽ tích nợ kỹ thuật rất nhanh
+❌ Quyết định pháp lý / tài chính **cuối cùng** *(draft OK, ký KHÔNG)*
+
+❌ Dữ liệu siêu nhạy cảm chưa qua DPA — chờ Enterprise + BAA
+
+❌ Task **< 30 giây** — overhead plan/approve không đáng
+
+❌ Bạn **không có thời gian review** output — sẽ tích nợ kỹ thuật rất nhanh
+
+❌ Việc **một lần, mơ hồ** — vẫn nên dùng **Chat**
 
 <br>
 
-> Quy tắc: **Cowork giỏi việc lặp, có structure. Việc 1 lần, mơ hồ → vẫn nên dùng Chat.**
+> Quy tắc vàng: **Cowork giỏi việc lặp, có structure. Việc 1 lần, mơ hồ — dùng Chat.**
 
 ---
 
-<!-- _class: lead -->
+## Lộ trình 30 ngày
 
-# Part 7
-## Getting Started — Chiều nay làm gì
+<div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:18px;font-size:22px;">
 
----
+<div>
 
-## Prep checklist
+### Day 1
+- Cài Desktop
+- Tạo 1 Project
+- Chạy 1 task duy nhất *(vd: dọn Downloads)*
 
-- [ ] **Tài khoản Claude Pro** — $20/tháng → claude.com/pricing
-- [ ] **Claude Desktop app** — Mac hoặc Windows → claude.com/download
-- [ ] Mở app → tab **Cowork** (cạnh Chat & Code)
-- [ ] Cấp quyền **folder làm việc** (gợi ý: `~/Cowork-Sandbox/` riêng)
-- [ ] Connect 1 MCP đầu tiên — gợi ý: Google Drive
-- [ ] Setup `CLAUDE.md` ghi tên + role + tone bạn muốn
-- [ ] Chạy task thử: *"Tóm tắt 3 file PDF mới nhất trong folder này"*
+</div>
 
----
+<div>
 
-## Pricing tham khảo (verify lại trên claude.com/pricing)
+### Week 1
+- Connect 3 tool: Drive + Gmail + Slack
+- Viết Project Instructions
+- Setup 1 scheduled task
 
-| Plan | Giá | Phù hợp |
-|---|---|---|
-| **Pro** | $20/tháng | Cá nhân, freelancer, founder solo |
-| **Team** | $25/seat *(min 5)* | Team 5-50 người, có SSO + shared workspace |
-| **Enterprise** | Custom | Cần EU residency, BAA/HIPAA, audit log, Managed Agents API |
+</div>
+
+<div>
+
+### Month 1
+- Cài plugin theo nghề
+- Tự build 2-3 skill
+- Dispatch từ điện thoại
+- Train team cùng dùng
+
+</div>
+
+</div>
 
 <br>
 
-> Một số bundle theo ngành: **Marketing Ops, Small Business, Legal** — bật trong settings.
+> Mục tiêu **Month 1**: tiết kiệm **5 giờ/tuần** ↔ trả lại $20 Pro trong 3 ngày.
 
 ---
 
-## Resources
+## Resources — 8 tut chính chủ Anthropic
 
-**Chính chủ:**
-- claude.com/cowork — product page
-- claude.com/download — Desktop app
-- docs.claude.com — Documentation
-- anthropic.com/news — Announcement
+1. **Set up Cowork to work the way you do** — `claude.com/resources/tutorials/cowork-onboarding-guide`
+2. **Delegating your first task** — `.../delegating-your-first-task-in-claude-cowork`
+3. **Customize Claude Cowork** — `.../customize-claude-cowork`
+4. **Choosing between Cowork or Chat** — `.../choosing-between-claude-cowork-or-chat`
+5. **For Sales: account research** — `.../using-claude-cowork-for-sales-account-research`
+6. **For Legal: question briefing** — `.../using-claude-cowork-for-legal-question-briefing`
+7. **For Marketing Ops: weekly review** — `.../using-claude-cowork-for-marketing-ops-review`
+8. **For Small Business** — `.../using-claude-for-your-small-business`
+
+---
+
+## Resources — community deep dives
+
+- **claudecowork.im** — unofficial guide đầy đủ, 40+ FAQ, ~30 prompt mẫu
+- **datacamp.com/tutorial/claude-cowork** *(Jan 2026)* — hands-on academic
+- **jeffsu.org/learn-80-of-claude-cowork-in-...** — 80/20 productivity workflow
+- **YouTube · AI Foundations** — "Full Cowork Tutorial for Beginners" (33 phút)
+
+<br>
 
 **Repo workshop này:**
-- github.com/the-agents-work/claude-cowork-workshop
-- *Slide + ghi chú demo + link bài đọc thêm*
-
-**Cộng đồng VN:**
-- *(điền link Facebook group / Zalo / Discord của anh)*
+- `github.com/the-agents-work/claude-cowork-workshop`
+- *Slide + ghi chú demo + tất cả link bài đọc*
 
 ---
 
-<!-- _class: lead -->
+## Q&A — câu hay được hỏi trước
 
-# Q&A
-## Mở mic, ask anything
-
-<br>
-
-**Một số câu hay được hỏi trước:**
-
-- *Cowork có an toàn cho file công ty không?* → Sandbox + approval per step.
-- *Có thay được nhân viên không?* → Thay **việc lặp lại**, không thay **judgement**.
-- *Bao lâu thì quen?* → 2-3 ngày dùng nghiêm túc.
-- *Tiếng Việt có ổn không?* → OCR + sinh tiếng Việt rất tốt từ Opus 4.7.
+- *Cowork có an toàn cho file công ty?* → **Sandboxed shell + approval per step.** Folder bạn không grant — Claude không thấy.
+- *Có thay được nhân viên?* → Thay **việc lặp lại**, không thay **judgment**. Vẫn cần người review output.
+- *Bao lâu thì quen?* → 2-3 ngày dùng nghiêm túc theo lộ trình 30 ngày.
+- *Tiếng Việt có ổn?* → OCR + sinh tiếng Việt rất tốt từ **Opus 4.7**. Diacritics OK.
+- *Cowork vs Claude Code?* → Code cho **dev** (git/build/refactor). Cowork cho **knowledge worker** (Office/email/file/browser).
+- *Có dùng được trên Linux?* → Chưa. Chỉ Mac + Windows.
 
 ---
 
-<!-- _class: lead -->
+<!-- _class: lead cover -->
 <!-- _paginate: false -->
 
 # Cảm ơn cả nhà 🙌
@@ -627,9 +1038,12 @@ Mỗi sáng mở máy → đã có brief sẵn.
 **Slide + repo:**
 github.com/the-agents-work/claude-cowork-workshop
 
+**Live deck (Pages):**
+the-agents-work.github.io/claude-cowork-workshop/
+
 **Theo dõi mình:**
-nguyễn bá nghĩa · cộng đồng Claude & AI Automation VN
+nguyễn bá nghĩa · community Claude & AI Automation VN ~100k
 
 <br>
 
-> *Bắt tay vào dùng. Tuần sau quay lại kể chuyện đầu tiên Cowork giúp bạn.*
+> *Tuần sau quay lại kể chuyện đầu tiên Cowork giúp bạn — chúng ta cùng học từ workflow thật.*
